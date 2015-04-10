@@ -1,4 +1,4 @@
-describe('ScheduleCtrl', function() {
+describe('SchedulesCtrl', function() {
 
 	beforeEach(module('myTtc'));
 
@@ -6,7 +6,7 @@ describe('ScheduleCtrl', function() {
 
     beforeEach(inject(function($rootScope, $controller) {
       scope = $rootScope.$new();
-      ctrl = $controller('ScheduleCtrl', {$scope: scope});
+      ctrl = $controller('SchedulesCtrl', {$scope: scope});
     }));	
 
 	it('should ...', inject(function() {

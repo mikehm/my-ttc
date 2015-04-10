@@ -2,9 +2,9 @@ angular.module('myTtc', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
 
 angular.module('myTtc').config(function($stateProvider, $urlRouterProvider) {
 
-    $stateProvider.state('schedule', {
-        url: '/schecule',
-        templateUrl: 'modules/partial/schedule/schedule.html'
+    $stateProvider.state('schedules', {
+        url: '/schedules',
+        templateUrl: 'modules/schedules/partial/schedules/schedules.html'
     });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/home');
