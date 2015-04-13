@@ -1,3 +1,7 @@
-<div class="col-md-12" ng-controller="SchedulesCtrl">
-	{{ttc}}	
+<div class="col-md-12" ng-controller="SchedulesCtrl">	
+	
+	<div ng-repeat="item in stop_times" class="col-sm-3 item">	 <p><small>Now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+		<p class="shape text-center">{{item.shape}}</p>
+		<p class="departure text-center">{{item.departure_time}}</p>
+	</div>
 </div>
