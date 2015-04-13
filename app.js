@@ -1,4 +1,8 @@
-angular.module('myTtc', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+angular.module('myTtc', ['ui.bootstrap',
+    'ui.utils',
+    'ui.router',
+    'ngAnimate',
+    'uiGmapgoogle-maps']);
 
 angular.module('myTtc').config(function($stateProvider, $urlRouterProvider) {
 

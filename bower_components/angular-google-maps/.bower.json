@@ -39,6 +39,5 @@
   },
   "_source": "git://github.com/angular-ui/angular-google-maps.git",
   "_target": "2.0.19",
-  "_originalSource": "angular-google-maps",
-  "_direct": true
+  "_originalSource": "angular-google-maps"
 }
