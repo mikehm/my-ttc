@@ -1,7 +1,23 @@
 <div class="col-md-12" ng-controller="SchedulesCtrl">	
-	
-	<div ng-repeat="item in stop_times" class="col-sm-3 item">	 <p><small>Now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
-		<p class="shape text-center">{{item.shape}}</p>
-		<p class="departure text-center">{{item.departure_time}}</p>
+
+	 <div class="row">
+       <div class="col-xs-3">fd</div>
+        <div class="col-xs-6">
+          <form ng-submit="ask(station)">
+            <div>
+              <input type="text" class="form-control" ng-model="station">
+            </div>           
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">btn</button>              
+            </div>        
+          </form>
+        </div>
+        <div class="col-xs-3">dfds</div>
+      </div>
+
+	<div>{{message}}</div>
+	<div ng-repeat="item in stop_times" class="col-sm-4 item">	 <p><small>Now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+		<p class="shape text-center">Bus #: {{item.shape}}</p>
+		<p class="departure text-center">Departure time: {{item.departure_time}}</p>
 	</div>
 </div>
