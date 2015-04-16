@@ -1,14 +1,13 @@
 <div class="col-md-12" ng-controller="SchedulesCtrl">	
-  hi there
 	 <div class="row">
-       <div class="col-xs-3">fd</div>
+       <div class="col-xs-3"></div>
         <div class="col-xs-6">
           <form ng-submit="ask(station)">
-            <div>
-              <input type="text" class="form-control" ng-model="station">
+            <div class="station-inp">
+              <input type="text" class="form-control text-center" ng-model="station" placeholder="Enter a station">
             </div>           
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">btn</button>              
+            <div class="text-center station-search-btn">
+              <button type="submit" class="btn btn-primary">Search...</button>              
             </div>        
           </form>
         </div>
@@ -16,7 +15,8 @@
       </div>
 
 	<div>{{message}}</div>
-	<div ng-repeat="item in stop_times" class="col-sm-4 item">	 <p class="text-center"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+	<div ng-repeat="item in stop_times" class="col-sm-4 item">	 
+  <p class="text-center"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
 		<p class="shape text-center">Bus #: {{item.shape}}</p>
 		<p class="departure text-center">Departure time: {{item.departure_time}}</p>
 	</div>

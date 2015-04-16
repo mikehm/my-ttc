@@ -22,9 +22,4 @@ function($scope, scheduleService){
 		$scope.stop_times = [];	
 		$scope.station = '';
 	};
-
-
-
-
-
 });
