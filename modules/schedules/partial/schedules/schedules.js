@@ -4,10 +4,8 @@ function($scope, scheduleService){
 	$scope.date_now = new Date();
 	
 	$scope.stop_times = [];
-	
+
 	$scope.ask = function(station){
-
-
 		scheduleService.getSched(station).then(
 		function(data){
 		  $scope.message = '';
@@ -24,6 +22,9 @@ function($scope, scheduleService){
 		$scope.stop_times = [];	
 		$scope.station = '';
 	};
+
+
+
 
 
 });

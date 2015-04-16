@@ -16,7 +16,7 @@
       </div>
 
 	<div>{{message}}</div>
-	<div ng-repeat="item in stop_times" class="col-sm-4 item">	 <p><small>Now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+	<div ng-repeat="item in stop_times" class="col-sm-4 item">	 <p class="text-center"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
 		<p class="shape text-center">Bus #: {{item.shape}}</p>
 		<p class="departure text-center">Departure time: {{item.departure_time}}</p>
 	</div>

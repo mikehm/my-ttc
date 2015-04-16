@@ -23,6 +23,7 @@
     "less.js": "~1.6",
     "font-awesome": "~4.0",
     "angular-google-maps": "~2.0.19",
-    "lodash": "2.4.1"
+    "lodash": "2.4.1",
+    "angular-selectize2": "~1.2.1"
   }
 }

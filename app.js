@@ -2,7 +2,8 @@ angular.module('myTtc', ['ui.bootstrap',
     'ui.utils',
     'ui.router',
     'ngAnimate',
-    'uiGmapgoogle-maps']);
+    'uiGmapgoogle-maps',
+    'selectize']);
 
 angular.module('myTtc').config(function($stateProvider, $urlRouterProvider) {
 
