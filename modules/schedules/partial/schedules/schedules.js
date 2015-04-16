@@ -2,11 +2,11 @@ angular.module('myTtc').controller('SchedulesCtrl',
 function($scope, scheduleService){
 	
 	$scope.date_now = new Date();
-	
 	$scope.stop_times = [];
-
+	
 	$scope.ask = function(station){
-		scheduleService.getSched(station).then(
+		var st = station.split(' ').join('_');
+		scheduleService.getSched(st).then(
 		function(data){
 		  $scope.message = '';
 		  $scope.routes = data;		
