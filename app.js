@@ -12,7 +12,7 @@ angular.module('myTtc').config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'modules/schedules/partial/schedules/schedules.html'
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/schedules');
 
 });
 
