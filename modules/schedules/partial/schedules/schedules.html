@@ -1,6 +1,6 @@
-<div class="col-md-12" ng-controller="SchedulesCtrl">	
+<div class="col-md-12 schedules-section" ng-controller="SchedulesCtrl">	
    <div class="row banner-div">
-     <h2 class="text-center banner">TTC </br>schedule</h2>
+     <h2 class="text-center banner">TTC schedule</h2>
      <p class="text-center">Enter any station and get the schedule for the next bus.</p>
    </div>
 	 <div class="row">
@@ -25,10 +25,13 @@
 	<div>{{message}}</div>
 
 	<div ng-repeat="item in stop_times | filter:searchText" class="col-sm-4 item">
-    <div class="inner-item">
-       <p class="text-center time-now"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
-    <p class="shape text-center">{{item.shape}}</p>
-    <p class="departure text-center">Departure time: {{item.departure_time}}</p>
+    <div class="inner-item">  
+      <div class="row">
+        <div class="col-xs-12 shape">{{item.shape}}</div>
+      </div>
+       <div class="row">
+         <div class="col-xs-12 departure">Departure time: {{item.departure_time}}</div>
+      </div>
     </div>
 	</div>
 </div>

@@ -15,7 +15,7 @@ function($scope, scheduleService){
 		}, function(err){
 			$scope.message = "Data is not available for this station";
 		});
-
+		
 		$scope.stop_times = [];	
 		$scope.station = '';
 	};
