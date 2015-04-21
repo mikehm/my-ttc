@@ -24,6 +24,7 @@
     "font-awesome": "~4.0",
     "angular-google-maps": "~2.0.19",
     "lodash": "2.4.1",
-    "angular-selectize2": "~1.2.1"
+    "angular-selectize2": "~1.2.1",
+    "ngmap": "~1.7.7"
   }
 }

@@ -1,7 +1,7 @@
 <div class="col-md-12" ng-controller="SchedulesCtrl">	
-   <div class="row">
-     <h1 class="text-center banner">TTC Schedule Tracker</h1>
-     <p class="text-center descriptor-text">Enter any station and find out when the next bus will arrive.</p>
+   <div class="row banner-div">
+     <h2 class="text-center banner">TTC </br>schedule</h2>
+     <p class="text-center">Enter any station and get the schedule for the next bus.</p>
    </div>
 	 <div class="row">
        <div class="col-sm-3"></div>
@@ -11,20 +11,24 @@
               <input type="text" class="text-center" ng-model="station" placeholder="Enter a station">
             </div>           
             <div class="text-center station-search-btn">
-              <button type="submit" class="search-btn">Search...</button>              
+              <button type="submit" class="search-btn">Search...</button>
             </div> 
-            <div class="text-center">
-              <input type="text" class="form-control" ng-model="searchText" pleaseholder="Search by bus ID">
-            </div>       
+            <div class="text-center station-inp">
+              <input type="text" class="text-center" ng-model="searchText" placeholder="Filter by bus ID">
+            </div> 
+
           </form>
         </div>
         <div class="col-sm-3"></div>
       </div>
 
 	<div>{{message}}</div>
-	<div ng-repeat="item in stop_times | filter:searchText" class="col-sm-4 item">	 
-  <p class="text-center time-now"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
-		<p class="shape text-center">{{item.shape}}</p>
-		<p class="departure text-center">Departure time: {{item.departure_time}}</p>
+
+	<div ng-repeat="item in stop_times | filter:searchText" class="col-sm-4 item">
+    <div class="inner-item">
+       <p class="text-center time-now"><small>Time now: {{date_now  | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+    <p class="shape text-center">{{item.shape}}</p>
+    <p class="departure text-center">Departure time: {{item.departure_time}}</p>
+    </div>
 	</div>
 </div>

@@ -1,5 +1,4 @@
 angular.module('myTtc').factory('scheduleService',function($http,$q) {
-
 	var scheduleService = {};
 	scheduleService.getSched = function getSched(station){
 		var deferred = $q.defer();	
@@ -11,7 +10,7 @@ angular.module('myTtc').factory('scheduleService',function($http,$q) {
 						}
 						else {
 							deferred.resolve(item.routes);
-							console.log(item.routes);
+							//console.log(item.routes);
 						}
 				});
 			})

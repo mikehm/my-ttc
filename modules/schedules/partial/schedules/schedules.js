@@ -1,9 +1,6 @@
 angular.module('myTtc').controller('SchedulesCtrl',
 function($scope, scheduleService){
-	
-	$scope.date_now = new Date();
-	$scope.stop_times = [];
-	
+
 	$scope.ask = function(station){
 		var st = station.split(' ').join('_');
 		scheduleService.getSched(st).then(
