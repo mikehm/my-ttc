@@ -1,7 +1,9 @@
 <div class="col-md-12 schedules-section" ng-controller="SchedulesCtrl">	
-   <div class="row banner-div">
-     <h2 class="text-center banner">TTC schedule</h2>
-     <p class="text-center">Enter any station and get the schedule for the next bus.</p>
+   <div class="row">
+     <h2 class="text-center logo">Transit App</h2>
+   </div>
+   <div class="row">
+      <p class="text-center desc-para">Enter any station and get the schedule for the next bus and train.</p>
    </div>
 	 <div class="row">
        <div class="col-sm-3"></div>
@@ -21,17 +23,14 @@
         </div>
         <div class="col-sm-3"></div>
       </div>
-
 	<div>{{message}}</div>
 
 	<div ng-repeat="item in stop_times | filter:searchText" class="col-sm-4 item">
-    <div class="inner-item">  
-      <div class="row">
+    <div class="inner-item what">  
         <div class="col-xs-12 shape">{{item.shape}}</div>
-      </div>
-       <div class="row">
-         <div class="col-xs-12 departure">Departure time: {{item.departure_time}}</div>
-      </div>
+        <div class="col-xs-12 departure">Departure time: {{item.departure_time}}</div>
     </div>
 	</div>
+
 </div>
+
