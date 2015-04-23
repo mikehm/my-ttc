@@ -13,7 +13,7 @@ function($scope, scheduleService){
 				});				
 			});
 		}, function(err){
-			$scope.message = "Data is not available for this station";
+			$scope.message = "Check if you have entered the correct station.";
 		});
 		
 		$scope.stop_times = [];	
